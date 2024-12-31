@@ -1,109 +1,90 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>The Unspeakable Oath &mdash; Pathfinder Society</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-    <link rel="stylesheet" href="../../css/theme.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>The Unspeakable Oath - Pathfinder Society</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <script>
-        hljs.initHighlightingOnLoad();
-    </script> 
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "The Unspeakable Oath", url: "#_top", children: [
+              {title: "Locked Inside", url: "#locked-inside" },
+              {title: "Tortuous Descent", url: "#tortuous-descent" },
+              {title: "No Asylum", url: "#no-asylum" },
+              {title: "Lost Soul", url: "#lost-soul" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
 </head>
 
-<body ontouchstart="">
-    <div id="container">
-        <aside>
-            <div class="home">
-                <div class="title">
-                    <button class="hamburger"></button>
-                    <a href="../.." class="site-name"> Pathfinder Society</a>
-                </div>
-                <div class="search">
-                    <div role="search">
-    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-    </form>
-</div>
-                </div>
-            </div>
-            <nav class="nav">
-                <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="../..">Home</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Age of Ashes</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/hellknight-hill/">Hellknight Hill</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/cult-of-cinders/">Cult of Cinders</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/tomorrow-must-burn/">Tomorrow Must Burn</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/fires-of-the-haunted-city/">Fires of the Haunted City</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Outlaws of Alkenstar</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/punks-in-a-powderkeg/">Punks in a Powderkeg</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Hungering Abyss</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/howl-of-the-hounds/">The Howl of the Hounds</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/cultists-among-us/">Cultists Among Us</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/hunger-from-below/">Hunger from Below</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Path to Carcosa</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../curtain-call/">Curtain Call</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../the-last-king/">The Last King</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../echoes-of-the-past/">Echoes of the Past</a></li>
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">The Unspeakable Oath</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#locked-inside">Locked Inside</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#tortuous-descent">Tortuous Descent</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#no-asylum">No Asylum</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#lost-soul">Lost Soul</a></li>
-</ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../a-phantom-of-truth/">A Phantom of Truth</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../the-pallid-mask/">The Pallid Mask</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../black-stars-rise/">Black Stars Rise</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../dim-carcosa/">Dim Carcosa</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Whispering Frost</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/the-frozen-warning/">The Frozen Warning</a></li>
-</ul></li>
-                </ul>
-            </nav>
-            <div class="repo">
-    <div class="previous"><a href="../echoes-of-the-past/">&laquo; Previous</a></div>
-    <div class="next"><a href="../a-phantom-of-truth/">Next &raquo;</a></div>
-</div>
-        </aside>
-        <div id="spacer"><button class="arrow"></button></div>
-        <main>
-            <div class="home-top">
-                <button class="hamburger"></button>
-                <a href="../.." class="site-name"> Pathfinder Society</a>
-            </div>
-            <div id="main">
-                <nav class="breadcrumbs">
-<ul>
-    <li>The Path to Carcosa</li>
-</ul>
-</nav>
-                <div id="content"><h1 id="the-unspeakable-oath">The Unspeakable Oath</h1>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../a-phantom-of-truth/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../a-phantom-of-truth/" class="btn btn-xs btn-link">
+        A Phantom of Truth
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../echoes-of-the-past/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../echoes-of-the-past/" class="btn btn-xs btn-link">
+        Echoes of the Past
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="the-unspeakable-oath">The Unspeakable Oath</h1>
 <h2 id="locked-inside">Locked Inside</h2>
 <p>The investigators stop off at The Olde Curiosity Shoppe for Daisy to pick up an amulet of protection. Arriving at Arkham Asylum, they are welcomed by the receptionist who listens to their story about the King in Yellow and tells them that <strong>Daniel Chesterfield</strong> is in patient confinement and is only to be seen by medical staff under the direction of Dr. Mintz. Going in to the asylum, the doors are locked behind them and they turn to find that the receptionist has disappeared. </p>
 <p>Going into a staff room, Daisy and Rita find some doctors' white coats and decide to put them on. Rita also picks up a mug of coffee. The other patients do not respond to questioning and avoid the team, until two of them with a yellow gleam in their eyes attack. The investigators defeat them, and then head towards the infirmary. There they find a nurse who is very upset that Daisy and Rita have stolen staff uniforms, and when Daisy tries to claim that they are members of staff, she asks security to come in, and they restrain Daisy in a straitjacket and ask her to calm down. Rita takes this opportunity to steal the keys from nurse's belt. After they leave the infirmary, Rita helps Daisy out of the straitjacket.</p>
@@ -114,25 +95,44 @@
 <p>After a brief realisation that all the investigators are starting to see the symbol from the onyx amulet (the <strong>Yellow Sign</strong>) everywhere, the team set loose the grinning man - who they convince to go to the infirmary to cause trouble. Rita rushes off to light a fire in the kitchen to cause a distraction, while Daisy, William, and Joe start a fight in the yard. Several possessed patients attack, and the investigators defeat them. Unlocking the gate to the garden, they are confronted with a strange beast emerging from the trees. Rita runs to the outside gate, but it is locked and none of the keys on the nurse's keyring fit. At this moment, she remembers that she had a lock-pick tucked away and recovers it from inside her jacket. With the others holding the beast off, she picks the lock on the gate and everyone flees with Daniel in tow.</p>
 <h2 id="lost-soul">Lost Soul</h2>
 <p>Over a couple of days, the investigators manage to calm Daniel down, and he tells them that the King in Yellow is not just a play - it is a being named <strong>Hastur</strong>. He warns them not to say his name, and that the cultists are trying to find Carcosa to release Hastur from his prison. He asks the investigators to find the path before them, and seal Hastur for good.</p>
-<p>After coming back from a walk, the investigators find Daniel dead - choked to death. They decide to heed his warning, and start to work out how to get to Paris - where they believe Nigel Engram could be found.</p></div>
-                <footer>
-    <div class="footer-buttons">
-        <div class="previous"><a href="../echoes-of-the-past/" title="Echoes of the Past"><span>Previous</span></a></div>
-        <div class="next"><a href="../a-phantom-of-truth/" title="A Phantom of Truth"><span>Next</span></a></div>
-    </div>
-    <div class="footer-note">
-        <p>
-            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
-            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
-        </p>
-    </div>
-</footer>
-            </div>
-        </main>
-    </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-    <script src="../../search/main.js"></script>
-</body>
+<p>After coming back from a walk, the investigators find Daniel dead - choked to death. They decide to heed his warning, and start to work out how to get to Paris - where they believe Nigel Engram could be found.</p>
 
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../a-phantom-of-truth/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../a-phantom-of-truth/" class="btn btn-xs btn-link">
+        A Phantom of Truth
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../echoes-of-the-past/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../echoes-of-the-past/" class="btn btn-xs btn-link">
+        Echoes of the Past
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>

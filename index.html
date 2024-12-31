@@ -1,110 +1,223 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="None">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Home &mdash; Pathfinder Society</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Pathfinder Society</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
     <script>
-        hljs.initHighlightingOnLoad();
-    </script> 
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Pathfinder Society Logs", url: "#_top", children: [
+              {title: "Age of Ashes", url: "#age-of-ashes" },
+              {title: "Outlaws of Alkenstar", url: "#outlaws-of-alkenstar" },
+              {title: "Hungering Abyss", url: "#hungering-abyss" },
+              {title: "The Path to Carcosa", url: "#the-path-to-carcosa" },
+              {title: "The Whispering Frost", url: "#the-whispering-frost" },
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script> 
 </head>
 
-<body ontouchstart="">
-    <div id="container">
-        <aside>
-            <div class="home">
-                <div class="title">
-                    <button class="hamburger"></button>
-                    <a href="." class="site-name"> Pathfinder Society</a>
-                </div>
-                <div class="search">
-                    <div role="search">
-    <form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
-        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-    </form>
-</div>
-                </div>
-            </div>
-            <nav class="nav">
-                <ul class="root">
-                    <li class="toctree-l1 current"><a class="nav-item current" href=".">Home</a>
-<ul class="subnav">
-<li class="toctree-l2"><a class="nav-item toc" href="#age-of-ashes">Age of Ashes</a></li>
-<li class="toctree-l2"><a class="nav-item toc" href="#outlaws-of-alkenstar">Outlaws of Alkenstar</a></li>
-<li class="toctree-l2"><a class="nav-item toc" href="#hungering-abyss">Hungering Abyss</a></li>
-<li class="toctree-l2"><a class="nav-item toc" href="#the-path-to-carcosa">The Path to Carcosa</a></li>
-<li class="toctree-l2"><a class="nav-item toc" href="#the-whispering-frost">The Whispering Frost</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Age of Ashes</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="age-of-ashes/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="age-of-ashes/hellknight-hill/">Hellknight Hill</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="age-of-ashes/cult-of-cinders/">Cult of Cinders</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="age-of-ashes/tomorrow-must-burn/">Tomorrow Must Burn</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="age-of-ashes/fires-of-the-haunted-city/">Fires of the Haunted City</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="age-of-ashes/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Outlaws of Alkenstar</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="outlaws-of-alkenstar/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="outlaws-of-alkenstar/punks-in-a-powderkeg/">Punks in a Powderkeg</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="outlaws-of-alkenstar/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Hungering Abyss</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="hungering-abyss/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="hungering-abyss/howl-of-the-hounds/">The Howl of the Hounds</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="hungering-abyss/cultists-among-us/">Cultists Among Us</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="hungering-abyss/hunger-from-below/">Hunger from Below</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Path to Carcosa</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/curtain-call/">Curtain Call</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/the-last-king/">The Last King</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/echoes-of-the-past/">Echoes of the Past</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/the-unspeakable-oath/">The Unspeakable Oath</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/a-phantom-of-truth/">A Phantom of Truth</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/the-pallid-mask/">The Pallid Mask</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/black-stars-rise/">Black Stars Rise</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-path-to-carcosa/dim-carcosa/">Dim Carcosa</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Whispering Frost</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="the-whispering-frost/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="the-whispering-frost/the-frozen-warning/">The Frozen Warning</a></li>
-</ul></li>
-                </ul>
-            </nav>
-            <div class="repo">
-    <div class="next"><a href="age-of-ashes/overview/">Next &raquo;</a></div>
-</div>
-        </aside>
-        <div id="spacer"><button class="arrow"></button></div>
-        <main>
-            <div class="home-top">
-                <button class="hamburger"></button>
-                <a href="." class="site-name"> Pathfinder Society</a>
-            </div>
-            <div id="main">
-                <nav class="breadcrumbs">
-<ul>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
     
-</ul>
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        Pathfinder Society<br>
+        
+      </div>
+    </a>
+  </div>
 </nav>
-                <div id="content"><h1 id="pathfinder-society-logs">Pathfinder Society Logs</h1>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Age of Ashes</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="age-of-ashes/overview/" class="wm-article-link wm-toc-text">Overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="age-of-ashes/hellknight-hill/" class="wm-article-link wm-toc-text">Hellknight Hill</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="age-of-ashes/cult-of-cinders/" class="wm-article-link wm-toc-text">Cult of Cinders</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="age-of-ashes/tomorrow-must-burn/" class="wm-article-link wm-toc-text">Tomorrow Must Burn</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="age-of-ashes/fires-of-the-haunted-city/" class="wm-article-link wm-toc-text">Fires of the Haunted City</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="age-of-ashes/npcs/" class="wm-article-link wm-toc-text">Notable NPCs</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Outlaws of Alkenstar</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="outlaws-of-alkenstar/overview/" class="wm-article-link wm-toc-text">Overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="outlaws-of-alkenstar/punks-in-a-powderkeg/" class="wm-article-link wm-toc-text">Punks in a Powderkeg</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="outlaws-of-alkenstar/npcs/" class="wm-article-link wm-toc-text">Notable NPCs</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Hungering Abyss</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="hungering-abyss/overview/" class="wm-article-link wm-toc-text">Overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="hungering-abyss/howl-of-the-hounds/" class="wm-article-link wm-toc-text">The Howl of the Hounds</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="hungering-abyss/cultists-among-us/" class="wm-article-link wm-toc-text">Cultists Among Us</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="hungering-abyss/hunger-from-below/" class="wm-article-link wm-toc-text">Hunger from Below</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">The Path to Carcosa</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/overview/" class="wm-article-link wm-toc-text">Overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/curtain-call/" class="wm-article-link wm-toc-text">Curtain Call</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/the-last-king/" class="wm-article-link wm-toc-text">The Last King</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/echoes-of-the-past/" class="wm-article-link wm-toc-text">Echoes of the Past</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/the-unspeakable-oath/" class="wm-article-link wm-toc-text">The Unspeakable Oath</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/a-phantom-of-truth/" class="wm-article-link wm-toc-text">A Phantom of Truth</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/the-pallid-mask/" class="wm-article-link wm-toc-text">The Pallid Mask</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/black-stars-rise/" class="wm-article-link wm-toc-text">Black Stars Rise</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-path-to-carcosa/dim-carcosa/" class="wm-article-link wm-toc-text">Dim Carcosa</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">The Whispering Frost</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-whispering-frost/overview/" class="wm-article-link wm-toc-text">Overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-whispering-frost/the-frozen-warning/" class="wm-article-link wm-toc-text">The Frozen Warning</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="the-whispering-frost/the-icebound-trail/" class="wm-article-link wm-toc-text">The Icebound Trail</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="age-of-ashes/overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="age-of-ashes/overview/" class="btn btn-xs btn-link">
+        Overview
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="pathfinder-society-logs">Pathfinder Society Logs</h1>
 <h2 id="age-of-ashes">Age of Ashes</h2>
 <p>An elf swashbuckler, a catfolk rogue, an aasimar ranger, an elf monk and a gnome cleric work answer the call for heroes and end up in charge of a castle that holds a secret history that takes them to all corners of the world and holds the key to preventing an apocalyptic <a href="age-of-ashes/overview/">age of ashes</a>?</p>
 <h2 id="outlaws-of-alkenstar">Outlaws of Alkenstar</h2>
@@ -114,24 +227,40 @@
 <h2 id="the-path-to-carcosa">The Path to Carcosa</h2>
 <p>For weeks, the upcoming performance of <em>The King in Yellow</em> has been the talk of the town. But after researching the play's dark history, you are convinced something foul is at work. Disappearances. Suicides. Delusions. Insanity. Wherever <em>The King in Yellow</em> is performed, madness follows close behind. No connection has yet been proven, but that won't stop you from searching for the truth, and following <a href="the-path-to-carcosa/overview/">the path to Carcosa</a>.</p>
 <h2 id="the-whispering-frost">The Whispering Frost</h2>
-<p>Blizzards have been plaguing Massachusetts. Some people are starting to suspect that something is amiss, because they have never been this fierce and unrelenting before. Rumours are starting to spread about voices on the wind - people are calling it <a href="the-whispering-frost/overview/">the Whispering Frost</a> - and some locals are disappearing without a trace. Supplies are running low, and the local gangs are using this opportunity to fill their coffers with supply work - both legal and illegal. When a small team are asked to escort supplies to the northern part of the state and find out why their contact has fallen silent, they find more than they bargained for.</p></div>
-                <footer>
-    <div class="footer-buttons">
-        <div class="next"><a href="age-of-ashes/overview/" title="Overview"><span>Next</span></a></div>
-    </div>
-    <div class="footer-note">
-        <p>
-            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
-            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
-        </p>
-    </div>
-</footer>
-            </div>
-        </main>
-    </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme.js"></script>
-    <script src="search/main.js"></script>
-</body>
+<p>Blizzards have been plaguing Massachusetts. Some people are starting to suspect that something is amiss, because they have never been this fierce and unrelenting before. Rumours are starting to spread about voices on the wind - people are calling it <a href="the-whispering-frost/overview/">the Whispering Frost</a> - and some locals are disappearing without a trace. Supplies are running low, and the local gangs are using this opportunity to fill their coffers with supply work - both legal and illegal. When a small team are asked to escort supplies to the northern part of the state and find out why their contact has fallen silent, they find more than they bargained for.</p>
 
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="age-of-ashes/overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="age-of-ashes/overview/" class="btn btn-xs btn-link">
+        Overview
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>
+<!--
+MkDocs version : 1.6.0
+Build Date UTC : 2024-12-31 14:12:54.245157+00:00
+-->

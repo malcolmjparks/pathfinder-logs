@@ -1,108 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>The Last King &mdash; Pathfinder Society</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-    <link rel="stylesheet" href="../../css/theme.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>The Last King - Pathfinder Society</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <script>
-        hljs.initHighlightingOnLoad();
-    </script> 
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "The Last King", url: "#_top", children: [
+              {title: "Fashionably Late", url: "#fashionably-late" },
+              {title: "The Terrifying Truth", url: "#the-terrifying-truth" },
+              {title: "Reality\u0027s Shadow", url: "#realitys-shadow" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
 </head>
 
-<body ontouchstart="">
-    <div id="container">
-        <aside>
-            <div class="home">
-                <div class="title">
-                    <button class="hamburger"></button>
-                    <a href="../.." class="site-name"> Pathfinder Society</a>
-                </div>
-                <div class="search">
-                    <div role="search">
-    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-    </form>
-</div>
-                </div>
-            </div>
-            <nav class="nav">
-                <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="../..">Home</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Age of Ashes</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/hellknight-hill/">Hellknight Hill</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/cult-of-cinders/">Cult of Cinders</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/tomorrow-must-burn/">Tomorrow Must Burn</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/fires-of-the-haunted-city/">Fires of the Haunted City</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../age-of-ashes/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Outlaws of Alkenstar</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/punks-in-a-powderkeg/">Punks in a Powderkeg</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Hungering Abyss</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/howl-of-the-hounds/">The Howl of the Hounds</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/cultists-among-us/">Cultists Among Us</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/hunger-from-below/">Hunger from Below</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Path to Carcosa</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../curtain-call/">Curtain Call</a></li>
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">The Last King</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#fashionably-late">Fashionably Late</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#the-terrifying-truth">The Terrifying Truth</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#realitys-shadow">Reality's Shadow</a></li>
-</ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../echoes-of-the-past/">Echoes of the Past</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../the-unspeakable-oath/">The Unspeakable Oath</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../a-phantom-of-truth/">A Phantom of Truth</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../the-pallid-mask/">The Pallid Mask</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../black-stars-rise/">Black Stars Rise</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../dim-carcosa/">Dim Carcosa</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Whispering Frost</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/the-frozen-warning/">The Frozen Warning</a></li>
-</ul></li>
-                </ul>
-            </nav>
-            <div class="repo">
-    <div class="previous"><a href="../curtain-call/">&laquo; Previous</a></div>
-    <div class="next"><a href="../echoes-of-the-past/">Next &raquo;</a></div>
-</div>
-        </aside>
-        <div id="spacer"><button class="arrow"></button></div>
-        <main>
-            <div class="home-top">
-                <button class="hamburger"></button>
-                <a href="../.." class="site-name"> Pathfinder Society</a>
-            </div>
-            <div id="main">
-                <nav class="breadcrumbs">
-<ul>
-    <li>The Path to Carcosa</li>
-</ul>
-</nav>
-                <div id="content"><h1 id="the-last-king">The Last King</h1>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../echoes-of-the-past/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../echoes-of-the-past/" class="btn btn-xs btn-link">
+        Echoes of the Past
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../curtain-call/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../curtain-call/" class="btn btn-xs btn-link">
+        Curtain Call
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="the-last-king">The Last King</h1>
 <h2 id="fashionably-late">Fashionably Late</h2>
 <p><strong>Constance Dumaine</strong> is hosting a party - but the investigators are met at the door by a path of blood, discordant music, and a doorman with only bloody stumps where he should have hands.</p>
 <p>Exploring the courtyard, the team are attacked by two nightgaunts who where perching on the rooftops. After defeating them, the team go through to the dining room, where they are confronted by the smell of rancid and rotten food. They interview <strong>Sebastien Moreau</strong>, who tells them that he has produced this show in Paris, Florence, New York - and that this was not the first production of "The King in Yellow" to be performed in Arkham.</p>
@@ -114,25 +95,44 @@
 <p>Once he is defeated, the costume designer <strong>Ishimaru Huruko</strong> enters the room. She tells the team about the time she saw the 'Stranger' drawing a symbol. She recreates it for the team, and as she finishes it, her spine grows and extends upwards separating her torso from the bottom half of her body. At this moment the Stranger also appears. The investigators defeat them both, and decide this is an opportune moment to leave the party.</p>
 <h2 id="realitys-shadow">Reality's Shadow</h2>
 <p>As the team leaves, they are surprised to see that the front yard is now clean, the windows not smashed, and the soothing tones of slow jazz drifting out from the courtyard. They decide that things have calmed down and that they should go back to investigate what happened. All signs of the struggles and oddities have vanished, but as they enter the dining room, they see the Stranger speaking with a tall mustached man holding a silver-handled cane. The team run from the house in a haze of pain and disorientation.</p>
-<p>At this point, they feel they need to gear up, so they drive to the docks to meet with Jimmy "the Rat" and buy a Tommy gun and a sledgehammer.</p></div>
-                <footer>
-    <div class="footer-buttons">
-        <div class="previous"><a href="../curtain-call/" title="Curtain Call"><span>Previous</span></a></div>
-        <div class="next"><a href="../echoes-of-the-past/" title="Echoes of the Past"><span>Next</span></a></div>
-    </div>
-    <div class="footer-note">
-        <p>
-            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
-            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
-        </p>
-    </div>
-</footer>
-            </div>
-        </main>
-    </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-    <script src="../../search/main.js"></script>
-</body>
+<p>At this point, they feel they need to gear up, so they drive to the docks to meet with Jimmy "the Rat" and buy a Tommy gun and a sledgehammer.</p>
 
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../echoes-of-the-past/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../echoes-of-the-past/" class="btn btn-xs btn-link">
+        Echoes of the Past
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../curtain-call/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../curtain-call/" class="btn btn-xs btn-link">
+        Curtain Call
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>

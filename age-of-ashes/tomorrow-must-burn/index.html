@@ -1,108 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>Tomorrow Must Burn &mdash; Pathfinder Society</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-    <link rel="stylesheet" href="../../css/theme.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Tomorrow Must Burn - Pathfinder Society</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <script>
-        hljs.initHighlightingOnLoad();
-    </script> 
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Tomorrow Must Burn", url: "#_top", children: [
+              {title: "The Road to Kintargo", url: "#the-road-to-kintargo" },
+              {title: "Shadows on the Silver City", url: "#shadows-on-the-silver-city" },
+              {title: "The Cornered Quarry", url: "#the-cornered-quarry" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
 </head>
 
-<body ontouchstart="">
-    <div id="container">
-        <aside>
-            <div class="home">
-                <div class="title">
-                    <button class="hamburger"></button>
-                    <a href="../.." class="site-name"> Pathfinder Society</a>
-                </div>
-                <div class="search">
-                    <div role="search">
-    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-    </form>
-</div>
-                </div>
-            </div>
-            <nav class="nav">
-                <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="../..">Home</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Age of Ashes</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../hellknight-hill/">Hellknight Hill</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../cult-of-cinders/">Cult of Cinders</a></li>
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">Tomorrow Must Burn</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#the-road-to-kintargo">The Road to Kintargo</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#shadows-on-the-silver-city">Shadows on the Silver City</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#the-cornered-quarry">The Cornered Quarry</a></li>
-</ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../fires-of-the-haunted-city/">Fires of the Haunted City</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Outlaws of Alkenstar</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/punks-in-a-powderkeg/">Punks in a Powderkeg</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Hungering Abyss</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/howl-of-the-hounds/">The Howl of the Hounds</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/cultists-among-us/">Cultists Among Us</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/hunger-from-below/">Hunger from Below</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Path to Carcosa</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/curtain-call/">Curtain Call</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/the-last-king/">The Last King</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/echoes-of-the-past/">Echoes of the Past</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/the-unspeakable-oath/">The Unspeakable Oath</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/a-phantom-of-truth/">A Phantom of Truth</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/the-pallid-mask/">The Pallid Mask</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/black-stars-rise/">Black Stars Rise</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/dim-carcosa/">Dim Carcosa</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Whispering Frost</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/the-frozen-warning/">The Frozen Warning</a></li>
-</ul></li>
-                </ul>
-            </nav>
-            <div class="repo">
-    <div class="previous"><a href="../cult-of-cinders/">&laquo; Previous</a></div>
-    <div class="next"><a href="../fires-of-the-haunted-city/">Next &raquo;</a></div>
-</div>
-        </aside>
-        <div id="spacer"><button class="arrow"></button></div>
-        <main>
-            <div class="home-top">
-                <button class="hamburger"></button>
-                <a href="../.." class="site-name"> Pathfinder Society</a>
-            </div>
-            <div id="main">
-                <nav class="breadcrumbs">
-<ul>
-    <li>Age of Ashes</li>
-</ul>
-</nav>
-                <div id="content"><h1 id="tomorrow-must-burn">Tomorrow Must Burn</h1>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../fires-of-the-haunted-city/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../fires-of-the-haunted-city/" class="btn btn-xs btn-link">
+        Fires of the Haunted City
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cult-of-cinders/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cult-of-cinders/" class="btn btn-xs btn-link">
+        Cult of Cinders
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="tomorrow-must-burn">Tomorrow Must Burn</h1>
 <h2 id="the-road-to-kintargo">The Road to Kintargo</h2>
 <p>The team receive a mysterious letter from <strong>Heuberk Thropp</strong> inviting them to meet at the shop of the local wainwright. VQFR go to meet him, and he proposes that they work together. He asks them to find three people that won't be missed, and will be excellent stock for the slave trade. VQFR refuse, and he retreats and sets off a trapped lathe. The team manage to disable the trap and attack and kill Heuberk and his cronies, and rescue the wainwright. </p>
 <p>Making their was through the Dreamgate, the team find themselves in a waystation, which was once dedicated to the goddess of dreams, <strong>Desna</strong>. It has now been desecrated in Abyssal. Heading into the north passageway, they find a statue of a tree, which grabs everyone except Vejonica (who didn't enter the room). Quan manages to disable it, but not before three visions are seen:</p>
@@ -136,25 +117,44 @@
 <li>Findir gets some rhino-hide armour</li>
 <li>Quan gets a set of dragon-hide armour that makes him immune to acid damage</li>
 </ul>
-<p>What will the team find when they venture through the Jewelgate?</p></div>
-                <footer>
-    <div class="footer-buttons">
-        <div class="previous"><a href="../cult-of-cinders/" title="Cult of Cinders"><span>Previous</span></a></div>
-        <div class="next"><a href="../fires-of-the-haunted-city/" title="Fires of the Haunted City"><span>Next</span></a></div>
-    </div>
-    <div class="footer-note">
-        <p>
-            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
-            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
-        </p>
-    </div>
-</footer>
-            </div>
-        </main>
-    </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-    <script src="../../search/main.js"></script>
-</body>
+<p>What will the team find when they venture through the Jewelgate?</p>
 
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../fires-of-the-haunted-city/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../fires-of-the-haunted-city/" class="btn btn-xs btn-link">
+        Fires of the Haunted City
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cult-of-cinders/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cult-of-cinders/" class="btn btn-xs btn-link">
+        Cult of Cinders
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>

@@ -1,109 +1,90 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>Hellknight Hill &mdash; Pathfinder Society</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-    <link rel="stylesheet" href="../../css/theme.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Hellknight Hill - Pathfinder Society</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <script>
-        hljs.initHighlightingOnLoad();
-    </script> 
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Hellknight Hill", url: "#_top", children: [
+              {title: "The Council\u0027s Chosen", url: "#the-councils-chosen" },
+              {title: "The Ruined Citadel", url: "#the-ruined-citadel" },
+              {title: "The Citadel Below", url: "#the-citadel-below" },
+              {title: "Breachill\u0027s Secrets", url: "#breachills-secrets" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
 </head>
 
-<body ontouchstart="">
-    <div id="container">
-        <aside>
-            <div class="home">
-                <div class="title">
-                    <button class="hamburger"></button>
-                    <a href="../.." class="site-name"> Pathfinder Society</a>
-                </div>
-                <div class="search">
-                    <div role="search">
-    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-    </form>
-</div>
-                </div>
-            </div>
-            <nav class="nav">
-                <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="../..">Home</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Age of Ashes</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../overview/">Overview</a></li>
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">Hellknight Hill</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#the-councils-chosen">The Council's Chosen</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#the-ruined-citadel">The Ruined Citadel</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#the-citadel-below">The Citadel Below</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#breachills-secrets">Breachill's Secrets</a></li>
-</ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../cult-of-cinders/">Cult of Cinders</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../tomorrow-must-burn/">Tomorrow Must Burn</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../fires-of-the-haunted-city/">Fires of the Haunted City</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Outlaws of Alkenstar</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/punks-in-a-powderkeg/">Punks in a Powderkeg</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../outlaws-of-alkenstar/npcs/">Notable NPCs</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Hungering Abyss</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/howl-of-the-hounds/">The Howl of the Hounds</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/cultists-among-us/">Cultists Among Us</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../hungering-abyss/hunger-from-below/">Hunger from Below</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Path to Carcosa</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/curtain-call/">Curtain Call</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/the-last-king/">The Last King</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/echoes-of-the-past/">Echoes of the Past</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/the-unspeakable-oath/">The Unspeakable Oath</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/a-phantom-of-truth/">A Phantom of Truth</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/the-pallid-mask/">The Pallid Mask</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/black-stars-rise/">Black Stars Rise</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-path-to-carcosa/dim-carcosa/">Dim Carcosa</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">The Whispering Frost</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../the-whispering-frost/the-frozen-warning/">The Frozen Warning</a></li>
-</ul></li>
-                </ul>
-            </nav>
-            <div class="repo">
-    <div class="previous"><a href="../overview/">&laquo; Previous</a></div>
-    <div class="next"><a href="../cult-of-cinders/">Next &raquo;</a></div>
-</div>
-        </aside>
-        <div id="spacer"><button class="arrow"></button></div>
-        <main>
-            <div class="home-top">
-                <button class="hamburger"></button>
-                <a href="../.." class="site-name"> Pathfinder Society</a>
-            </div>
-            <div id="main">
-                <nav class="breadcrumbs">
-<ul>
-    <li>Age of Ashes</li>
-</ul>
-</nav>
-                <div id="content"><h1 id="hellknight-hill">Hellknight Hill</h1>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cult-of-cinders/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cult-of-cinders/" class="btn btn-xs btn-link">
+        Cult of Cinders
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../overview/" class="btn btn-xs btn-link">
+        Overview
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="hellknight-hill">Hellknight Hill</h1>
 <h2 id="the-councils-chosen">The Council's Chosen</h2>
 <p>There is a "Call for heroes" in Breachill. Quan and Findir already know each other and engage in some boxing in the pub before being joined by Vejonica and Rab McNab and heading to City Hall. The goblin <strong>Warbal Bumblebrasher</strong>  is asking for help because there's red smoke above Hellknight Hill and she's lost contact with the local goblin tribe. </p>
 <p>At that moment, a fire elemental bursts in and City Hall catches fire. Vejonica uses her Bullhorn spell to co-ordinate helping everyone leave safely, while Quan, Findir and Rab McNab defeat the elemental. Everyone organises a bucket line and manages to put out the fire. The leader of the council finds out that a halfling <strong>Calmont</strong> set the fire and then ran towards Hellknight Hill. VQFR agree to find him and bring him back to face justice.</p>
@@ -121,25 +102,44 @@
 <p>Heading deeper into the tunnels, they feel they are headed back towards Hellknight Hill. They fight some spiders and an insane barghest who has goblin skeletons posed in positions of worship. A half-spider half-human anandi called <strong>Renali</strong> joins the fight on the players' side. She said she came through an elf-gate with the cinderclaws (who she hates) to try to stop them, and got stranded along with them when the gate closed.</p>
 <p>The team and Renali head down to the lowest level, and defeat the cinderclaw leader here, <strong>Malarunk</strong> - who was carrying a magical hunter's arrowhead that is used to open <strong>Huntergate</strong>. They find Alseta's Ring, and a vault which has a door-warden that will attack if someone tries to go through the door. Findir takes an invisibility potion and goes and grabs everything from the room, including the deed to the castle.</p>
 <p>The team get handsome reward for clearing out the castle and bringing Calmont to justice. Over the next few days, Rab organises masons, workmen and craftsmen to start repairing the stairs, clearing out the junk and building livable quarters.</p>
-<p>Findir fixes Huntergate and touching the arrowhead to it opens a portal.</p></div>
-                <footer>
-    <div class="footer-buttons">
-        <div class="previous"><a href="../overview/" title="Overview"><span>Previous</span></a></div>
-        <div class="next"><a href="../cult-of-cinders/" title="Cult of Cinders"><span>Next</span></a></div>
-    </div>
-    <div class="footer-note">
-        <p>
-            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
-            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
-        </p>
-    </div>
-</footer>
-            </div>
-        </main>
-    </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-    <script src="../../search/main.js"></script>
-</body>
+<p>Findir fixes Huntergate and touching the arrowhead to it opens a portal.</p>
 
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cult-of-cinders/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cult-of-cinders/" class="btn btn-xs btn-link">
+        Cult of Cinders
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../overview/" class="btn btn-xs btn-link">
+        Overview
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>
